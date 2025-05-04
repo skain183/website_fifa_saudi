@@ -1,0 +1,118 @@
+<!-- tickets.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tickets - FIFA 2034</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .match-table button {
+      background: #1B5E20;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .match-table button:hover {
+      background: #388E3C;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="tickets.html">Tickets</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="language.html">Language Tips</a></li>
+      <li><a href="transport.html">Transportation</a></li>
+      <li><a href="chatbot.html">Chatbot</a></li>
+    </ul>
+  </nav>
+
+  <section class="intro">
+    <h2>Ticket Information</h2>
+    <table class="match-table">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Price (SAR)</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>VIP</td>
+          <td>300</td>
+          <td>Premium seating, lounge access, free merchandise</td>
+        </tr>
+        <tr>
+          <td>Regular</td>
+          <td>100</td>
+          <td>Standard stadium seating</td>
+        </tr>
+        <tr>
+          <td>Group</td>
+          <td>80</td>
+          <td>Discounted rate for groups of 4 or more</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="intro">
+    <h2>Buy Your Tickets</h2>
+    <table class="match-table">
+      <thead>
+        <tr>
+          <th>Match</th>
+          <th>City</th>
+          <th>Date</th>
+          <th>Price (SAR)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Opening Match</td>
+          <td>Riyadh</td>
+          <td>June 9</td>
+          <td>300</td>
+          <td><button onclick="bookNow('Opening Match')">Book</button></td>
+        </tr>
+        <tr>
+          <td>Quarter Final</td>
+          <td>Jeddah</td>
+          <td>June 25</td>
+          <td>250</td>
+          <td><button onclick="bookNow('Quarter Final')">Book</button></td>
+        </tr>
+        <tr>
+          <td>Final</td>
+          <td>Jeddah</td>
+          <td>July 5</td>
+          <td>400</td>
+          <td><button onclick="bookNow('Final')">Book</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BugSquad19 | All rights reserved.</p>
+  </footer>
+
+  <script>
+    function bookNow(itemName) {
+      alert(`✅ Booking confirmed for ${itemName}!`);
+    }
+  </script>
+</body>
+</html>

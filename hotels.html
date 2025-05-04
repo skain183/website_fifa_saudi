@@ -1,0 +1,99 @@
+<!-- hotels.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotels - FIFA 2034</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .match-table button {
+      background: #1B5E20;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .match-table button:hover {
+      background: #388E3C;
+      transform: scale(1.05);
+    }
+
+    .match-table button:active {
+      background: #2e7d32;
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="tickets.html">Tickets</a></li>
+      <li><a href="hotels.html">Hotels</a></li>
+      <li><a href="language.html">Language Tips</a></li>
+      <li><a href="transport.html">Transportation</a></li>
+      <li><a href="chatbot.html">Chatbot</a></li>
+    </ul>
+  </nav>
+
+  <section class="intro">
+    <h2>Recommended Hotels</h2>
+    <table class="match-table">
+      <thead>
+        <tr>
+          <th>Hotel</th>
+          <th>City</th>
+          <th>Price/Night (SAR)</th>
+          <th>Rating</th>
+          <th>Image</th>
+          <th>Book</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+  <td>Ritz-Carlton</td>
+  <td>Riyadh</td>
+  <td>1200</td>
+  <td>5⭐</td>
+  <td><img src="images/ritz sauid.jpg" alt="Ritz-Carlton Riyadh" width="120" /></td>
+  <td><button onclick="bookNow('Ritz-Carlton')">Book</button></td>
+</tr>
+
+          <td>Jeddah Hilton</td>
+          <td>Jeddah</td>
+          <td>850</td>
+          <td>4⭐</td>
+          <td><img src="images/hitlon.jpg" alt="Jeddah Hilton" width="120" /></td>
+          <td><button onclick="bookNow('Jeddah Hilton')">Book</button></td>
+        </tr>
+        <tr>
+          <td>Dammam Novotel</td>
+          <td>Dammam</td>
+          <td>600</td>
+          <td>3⭐</td>
+          <td><img src="images/novotel.jpg" alt="Dammam Novotel" width="120" /></td>
+          <td><button onclick="bookNow('Dammam Novotel')">Book</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BugSquad19 | All rights reserved.</p>
+  </footer>
+
+  <script>
+    function bookNow(hotelName) {
+      alert(`✅ Booking confirmed for ${hotelName}!`);
+    }
+  </script>
+</body>
+</html>
