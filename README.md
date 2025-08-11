@@ -1,8 +1,8 @@
-# FIFA World Cup 2034 – Progrmathon project
+# FIFA World Cup 2034 – Programathon project
 #Demo version 
 ## Project Overview
 ## this is a demo project made by freashmans in cs managed to learn web dev in almost a week . 
-a web-based fan guide for the FIFA World Cup 2034 hosted in Saudi Arabia. It provides visitors with key services such as match schedules, ticket booking, hotel recommendations, language tips, transportation guidance, and a smart chatbot assistant.
+a web-based fan guide for the FIFA World Cup 2034 hosted in Saudi Arabia. It provides visitors with key services such as match schedules, ticket booking, hotel recommendations, language tips, transportation guidance, and a smart chatbot assistant .
 
 ---
 
@@ -30,5 +30,6 @@ No special installation is needed. Just follow these steps:
 #### Install dependencies:
 ```bash
 pip install sentence-transformers torch
+
 
 
